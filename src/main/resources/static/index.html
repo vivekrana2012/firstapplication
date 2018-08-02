@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>First Application</title>
+</head>
+<body ng-controller="appController">
+
+    <ul>
+        <li ng-repeat="student in students">
+            <span>{{student.id}}</span>
+            <p>{{student.name}}</p>
+            <span>{{student.course}}</span>
+        </li>
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+    <script src="controller.js"></script>
+    <!--<script src="//code.jquery.com/jquery-1.12.4.js"></script>-->
+</body>
+</html>
